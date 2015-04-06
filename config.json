@@ -1,0 +1,6 @@
+{
+    "STORAGE_NAME": "twitterlist",
+    "STORAGE_KEY": "qx94Dpg+hJrr6US3HJiPeU6EXVcjmi9zfVMVtSkOdyzUWPuLEkNMpvLDtQH3ILCU5dWdnJhSRNTcex14q8kn3w==",
+    "PARTITION_KEY": "mytasks",
+    "TABLE_NAME": "tasks"
+}
