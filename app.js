@@ -6,6 +6,11 @@ var tableName = nconf.get("TABLE_NAME");
 var partitionKey = nconf.get("PARTITION_KEY");
 var accountName = nconf.get("STORAGE_NAME");
 var accountKey = nconf.get("STORAGE_KEY");
+var consumerKey = nconf.get("CONSUMER_KEY");
+var consumerSecret = nconf.get("CONSUMER_SECRET");
+var accessToken = nconf.get("ACCESS_TOKEN");
+var accessTokenSecret = nconf.get("ACCESS_TOKEN_SECRET");
+
 var express = require('express');
 var path = require('path');
 var favicon = require('static-favicon');
@@ -13,8 +18,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
+//var routes = require('./routes/index');
+//var users = require('./routes/users');
 
 var app = express();
 
@@ -29,14 +34,25 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-var TaskList = require('./routes/tasklist');
-var Task = require('./models/task');
-var task = new Task(azure.createTableService(accountName, accountKey), tableName, partitionKey);
-var taskList = new TaskList(task);
+var Bot = require('./lib/bot');
+var bot = new Bot({
+    consumer_key:         consumerKey
+  , consumer_secret:      consumerSecret
+  , access_token:         accessToken
+  , access_token_secret:  accessTokenSecret
+});
+var TweetList = require('./routes/tweetlist');
+var DeleteTweetList = require('./routes/deletetweetlist');
+var Tweet = require('./models/tweet');
+var tweet = new Tweet(azure.createTableService(accountName, accountKey), tableName, partitionKey);
+var tweetList = new TweetList(tweet, bot);
+var deletetweetList = new DeleteTweetList(tweet);
 
-app.get('/', taskList.showTasks.bind(taskList));
-app.post('/addtask', taskList.addTask.bind(taskList));
-app.post('/completetask', taskList.completeTask.bind(taskList));
+app.get('/', tweetList.showTweets.bind(tweetList));
+app.get('/delete', deletetweetList.showTweets.bind(deletetweetList));
+app.post('/deletetweet', deletetweetList.deleteTweet.bind(deletetweetList));
+app.post('/addtweet', tweetList.addTweet.bind(tweetList));
+app.post('/posttweet', tweetList.postTweet.bind(tweetList));
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {

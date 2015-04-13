@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  br
+
+  form(action="/deletetweet", method="post")
+    table.table.table-striped.table-bordered
+      tr
+        td Tweet
+        td Times Tweeted
+        td Delete Tweet
+      if (typeof tweets === "undefined")
+        tr
+          td 
+      else
+        each tweet in tweets
+          tr
+            td #{tweet.tweet._}
+            td #{tweet.count._}
+            td
+              input(type="checkbox", name="#{tweet.RowKey._}", value="#{tweet.tweet._}")
+    button.btn(type="submit") Delete
