@@ -1,0 +1,30 @@
+<step title="Incoming Request" date="2015-04-06T22:01:18.838" instance="68f2c4" url="/api/deployments/6306a303256a142afefe3312d138c411c118d90c?api-version=2014-06-01" method="PUT" type="request" pid="6420,2,28" Connection="Keep-Alive" Content-Length="17" Content-Type="application/json" Accept="application/json" Accept-Encoding="gzip, deflate" Accept-Language="en" Expect="100-continue" Host="nodetwitterbot.scm.azurewebsites.net" Referer="https://management.azure.com/subscriptions/58132878-9cf6-4121-873e-15df94558bd9/resourcegroups/Default-Web-WestUS/providers/Microsoft.Web/sites/NodeTwitterBot/deployments/6306a303256a142afefe3312d138c411c118d90c?api-version=2014-06-01" User-Agent="Portal-Exp/5.9.2.398 (Websites) Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML%2C like Gecko) Chrome/41.0.2272.118 Safari/537.36" x-ms-version="2014-06-01" x-ms-client-request-id="B58A353F-75BF-40D7-A8E9-C3691186B2FC" x-ms-client-session-id="8cd01fbc1f144c39abb1ff2e117c8a3a" x-ms-correlation-request-id="c6b1a43e-4f8f-4d2c-8b44-11c16b92603e" x-ms-routing-request-id="NORTHCENTRALUS:20150406T220118Z:c6b1a43e-4f8f-4d2c-8b44-11c16b92603e" x-ms-client-ip-address="23.96.208.96" x-ms-client-audience="https://management.core.windows.net/" x-ms-client-app-id="c44b4083-3bb0-49c1-b47d-974e53cbdf3c" x-ms-client-tenant-id="8df35d16-20f4-4636-8360-f9d1a05b64af" x-ms-client-issuer="https://sts.windows.net/8df35d16-20f4-4636-8360-f9d1a05b64af/" x-ms-client-object-id="59872d2d-88f3-45bb-b26f-58814e5525af" x-ms-client-principal-id="0003BFFDC09797AB" x-ms-client-authorization-source="Legacy" x-ms-client-identity-provider="live.com" x-ms-from-geomaster="true" x-ms-via-extensions-route="true" x-ms-geo-location="West US" X-SITE-DEPLOYMENT-ID="NodeTwitterBot" X-MS-WAWS-JWT="" >
+  <step title="DeploymentService.Deploy(id)" date="2015-04-06T22:01:18.963" >
+    <step title="Executing external process" date="2015-04-06T22:01:19.010" type="process" path="git.exe" arguments="rev-parse --git-dir" /><!-- duration: 47ms -->
+    <step title="Assuming git repository at D:\home\site\repository" date="2015-04-06T22:01:19.057" /><!-- duration: 16ms -->
+    <step title="Executing external process" date="2015-04-06T22:01:19.197" type="process" path="git.exe" arguments="rev-parse --git-dir" /><!-- duration: 47ms -->
+    <step title="Assuming git repository at D:\home\site\repository" date="2015-04-06T22:01:19.244" /><!-- duration: 0ms -->
+    <step title="Executing external process" date="2015-04-06T22:01:19.260" type="process" path="git.exe" arguments="log -n 1 6306a303256a142afefe3312d138c411c118d90c --" /><!-- duration: 62ms -->
+    <step title="DeploymentManager.Deploy(id)" date="2015-04-06T22:01:19.338" >
+      <step title="Collecting changeset information" date="2015-04-06T22:01:19.353" /><!-- duration: 47ms -->
+      <step title="Updating to specific changeset" date="2015-04-06T22:01:19.447" >
+        <step title="Executing external process" date="2015-04-06T22:01:19.510" type="process" path="git.exe" arguments="checkout 6306a303256a142afefe3312d138c411c118d90c --force" /><!-- duration: 359ms -->
+      </step><!-- duration: 438ms -->
+      <step title="Updating submodules" date="2015-04-06T22:01:19.885" /><!-- duration: 63ms -->
+      <step title="Determining deployment builder" date="2015-04-06T22:01:20.322" >
+        <step title="Executing external process" date="2015-04-06T22:01:20.338" type="process" path="git.exe" arguments="ls-files *.csproj *.vbproj *.fsproj *.sln" /><!-- duration: 47ms -->
+        <step title="Builder is NodeSiteBuilder" date="2015-04-06T22:01:20.525" /><!-- duration: 0ms -->
+      </step><!-- duration: 203ms -->
+      <step title="Copying SSH keys" date="2015-04-06T22:01:20.557" /><!-- duration: 0ms -->
+      <step title="Building" date="2015-04-06T22:01:20.572" >
+        <step title="Generating deployment script" date="2015-04-06T22:01:20.635" >
+          <step title="Using cached version of the deployment script for command: -y --no-dot-deployment -r &quot;D:\home\site\repository&quot; -o &quot;D:\home\site\deployments\tools&quot; --node --sitePath &quot;D:\home\site\repository&quot;" date="2015-04-06T22:01:20.666" /><!-- duration: 0ms -->
+        </step><!-- duration: 63ms -->
+        <step title="Executing external process" date="2015-04-06T22:01:20.838" type="process" path="starter.cmd" arguments="&quot;D:\home\site\deployments\tools\deploy.cmd&quot;" /><!-- duration: 3500ms -->
+      </step><!-- duration: 3953ms -->
+    </step><!-- duration: 5203ms -->
+    <step title="Cleaning up temp files" date="2015-04-06T22:01:24.541" /><!-- duration: 0ms -->
+    <step title="WebHooksManager.PublishEventAsync: PostDeployment" date="2015-04-06T22:01:24.572" /><!-- duration: 47ms -->
+  </step><!-- duration: 5672ms -->
+  <step title="Outgoing response" date="2015-04-06T22:01:24.650" type="response" statusCode="204" statusText="No Content" Server="Microsoft-IIS/8.0" x-ms-request-id="ee7d3ee9-8a16-45f5-b766-1492b22dcdcd" Cache-Control="private" X-AspNet-Version="4.0.30319" /><!-- duration: 0ms -->
+</step><!-- duration: 5813ms -->

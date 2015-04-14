@@ -1,0 +1,6 @@
+<step title="Incoming Request" date="2015-04-13T09:04:18.690" instance="b57b31" url="/api/deployments/3692bda3a82ee9642f40ff7458ec45113f8a2ee6/log" method="GET" type="request" pid="9876,2,10" Connection="Keep-Alive" Accept="application/json" Accept-Language="en-US" Host="nodetwitterbot.scm.azurewebsites.net" User-Agent="Azure-Portal/5.2.00298.28" x-ms-client-request-id="51b91e3e-f7b5-43f9-b7be-796df58cdeed-2015-04-13 09:04:24Z" x-ms-client-session-id="953e07e2-c9a9-492a-9670-9c3ac5b8e975" X-SITE-DEPLOYMENT-ID="NodeTwitterBot" X-MS-WAWS-JWT="" >
+  <step title="DeploymentService.GetLogEntry" date="2015-04-13T09:04:18.705" >
+    <step title="DeploymentManager.GetLogEntries(id)" date="2015-04-13T09:04:18.705" /><!-- duration: 78ms -->
+  </step><!-- duration: 78ms -->
+  <step title="Outgoing response" date="2015-04-13T09:04:18.783" type="response" statusCode="200" statusText="OK" Server="Microsoft-IIS/8.0" x-ms-request-id="689f0012-d57e-4dfb-8f7b-76cb01531af8" Cache-Control="private" X-AspNet-Version="4.0.30319" Content-Type="application/json; charset=utf-8" /><!-- duration: 0ms -->
+</step><!-- duration: 109ms -->

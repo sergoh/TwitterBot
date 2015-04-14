@@ -1,0 +1,15 @@
+<step title="Incoming Request" date="2015-04-06T21:58:12.647" instance="68f2c4" url="/NodeTwitterBot.git/info/refs?service=git-receive-pack" method="GET" type="request" pid="6420,2,25" Connection="Keep-Alive" Pragma="no-cache" Accept="*/*" Accept-Encoding="gzip" Host="nodetwitterbot.scm.azurewebsites.net" User-Agent="git/1.9.3 (Apple Git-50)" X-SITE-DEPLOYMENT-ID="NodeTwitterBot" X-MS-WAWS-JWT="" >
+  <step title="InfoRefsService.Execute" date="2015-04-06T21:58:12.662" >
+    <step title="Executing external process" date="2015-04-06T21:58:12.678" type="process" path="git.exe" arguments="rev-parse --git-dir" /><!-- duration: 47ms -->
+    <step title="Assuming git repository at D:\home\site\repository" date="2015-04-06T21:58:12.725" /><!-- duration: 16ms -->
+    <step title="InfoRefsService.SmartInfoRefs" date="2015-04-06T21:58:12.740" >
+      <step title="Executing external process" date="2015-04-06T21:58:12.756" type="process" path="git.exe" arguments="rev-parse --git-dir" /><!-- duration: 31ms -->
+      <step title="Assuming git repository at D:\home\site\repository" date="2015-04-06T21:58:12.787" /><!-- duration: 0ms -->
+      <step title="GitExeServer.AdvertiseReceivePack" date="2015-04-06T21:58:12.803" >
+        <step title="Executing external process" date="2015-04-06T21:58:12.803" type="process" path="git.exe" arguments="receive-pack --stateless-rpc --advertise-refs &quot;D:\home\site\repository&quot;" /><!-- duration: 47ms -->
+      </step><!-- duration: 47ms -->
+      <step title="Writing 185 bytes" date="2015-04-06T21:58:12.865" /><!-- duration: 0ms -->
+    </step><!-- duration: 125ms -->
+  </step><!-- duration: 219ms -->
+  <step title="Outgoing response" date="2015-04-06T21:58:12.881" type="response" statusCode="200" statusText="OK" Server="Microsoft-IIS/8.0" x-ms-request-id="585c5bbd-5515-4892-bf73-f63641174b26" Pragma="no-cache" Cache-Control="must-revalidate, no-cache, max-age=0" Expires="Tue, 01 Jan 1980 00:00:00 GMT" Content-Length="185" X-AspNet-Version="4.0.30319" Content-Type="application/x-git-receive-pack-advertisement" /><!-- duration: 0ms -->
+</step><!-- duration: 234ms -->

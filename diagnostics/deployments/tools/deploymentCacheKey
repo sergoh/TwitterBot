@@ -1,0 +1,2 @@
+44.40324.1452.0
+-y --no-dot-deployment -r "D:\home\site\repository" -o "D:\home\site\deployments\tools" --node --sitePath "D:\home\site\repository"

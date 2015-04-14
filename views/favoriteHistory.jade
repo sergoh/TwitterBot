@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h1= title
+  br
+  h2 
+  form(action="/deletetweet", method="post")
+    table.table.table-striped.table-bordered
+      tr
+        td User Handle
+        td Tweet Favorited
+        td Date Favorited
+        td Unfavorite
+      if (typeof tweets === "undefined")
+        tr
+          td 
+      else
+        each tweet in tweets
+          tr
+            td #{tweet.handle._}
+            td #{tweet.tweet._}
+            - var day   = tweet.Timestamp._.getDate();
+            - var month = tweet.Timestamp._.getMonth() + 1;
+            - var year  = tweet.Timestamp._.getFullYear();
+            td #{month + "/" + day + "/" + year}
+            td
+              input(type="checkbox", name="#{tweet.RowKey._}", value="#{tweet.tweet._}")
+    button.btn(type="submit") Delete

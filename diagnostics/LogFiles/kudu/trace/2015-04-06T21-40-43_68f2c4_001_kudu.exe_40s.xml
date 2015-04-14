@@ -1,0 +1,24 @@
+<step title="Executing external process" date="2015-04-06T21:40:43.065" instance="68f2c4" type="process" path="kudu.exe" arguments="D:\home\site D:\Program Files (x86)\SiteExtensions\Kudu\44.40324.1452\msbuild" >
+  <step title="Executing external process" date="2015-04-06T21:40:43.097" type="process" path="git.exe" arguments="log -n 1 master --" /><!-- duration: 156ms -->
+  <step title="DeploymentManager.Deploy(id)" date="2015-04-06T21:40:43.269" >
+    <step title="Collecting changeset information" date="2015-04-06T21:40:43.269" /><!-- duration: 78ms -->
+    <step title="Updating to specific changeset" date="2015-04-06T21:40:43.347" >
+      <step title="Executing external process" date="2015-04-06T21:40:43.456" type="process" path="git.exe" arguments="checkout master --force" /><!-- duration: 391ms -->
+    </step><!-- duration: 500ms -->
+    <step title="Updating submodules" date="2015-04-06T21:40:43.862" /><!-- duration: 63ms -->
+    <step title="Determining deployment builder" date="2015-04-06T21:40:44.034" >
+      <step title="Executing external process" date="2015-04-06T21:40:44.050" type="process" path="git.exe" arguments="ls-files *.csproj *.vbproj *.fsproj *.sln" /><!-- duration: 47ms -->
+      <step title="Builder is NodeSiteBuilder" date="2015-04-06T21:40:44.253" /><!-- duration: 16ms -->
+    </step><!-- duration: 234ms -->
+    <step title="Copying SSH keys" date="2015-04-06T21:40:44.315" /><!-- duration: 0ms -->
+    <step title="Building" date="2015-04-06T21:40:44.315" >
+      <step title="Generating deployment script" date="2015-04-06T21:40:44.394" >
+        <step title="Executing external process" date="2015-04-06T21:40:44.440" type="process" path="starter.cmd" arguments="&quot;d:\Program Files (x86)\SiteExtensions\Kudu\44.40324.1452\bin\node_modules\.bin\kuduscript.cmd&quot; -y --no-dot-deployment -r &quot;D:\home\site\repository&quot; -o &quot;D:\home\site\deployments\tools&quot; --node --sitePath &quot;D:\home\site\repository&quot;" /><!-- duration: 234ms -->
+        <step title="Saved cached version of the deployment script for command -y --no-dot-deployment -r &quot;D:\home\site\repository&quot; -o &quot;D:\home\site\deployments\tools&quot; --node --sitePath &quot;D:\home\site\repository&quot;" date="2015-04-06T21:40:44.675" /><!-- duration: 0ms -->
+      </step><!-- duration: 297ms -->
+      <step title="Executing external process" date="2015-04-06T21:40:44.784" type="process" path="starter.cmd" arguments="&quot;D:\home\site\deployments\tools\deploy.cmd&quot;" /><!-- duration: 37407ms -->
+    </step><!-- duration: 38079ms -->
+  </step><!-- duration: 39126ms -->
+  <step title="Cleaning up temp files" date="2015-04-06T21:41:22.410" /><!-- duration: 0ms -->
+  <step title="WebHooksManager.PublishEventAsync: PostDeployment" date="2015-04-06T21:41:22.441" /><!-- duration: 250ms -->
+</step><!-- duration: 39782ms -->

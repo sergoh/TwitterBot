@@ -1,0 +1,2 @@
+<step title="Incoming Request" date="2015-04-13T09:20:46.046" instance="b57b31" url="/dump" method="GET" type="request" pid="52756,2,7" Connection="Keep-Alive" Content-Length="0" Accept-Charset="UTF-8" Host="nodetwitterbot.scm.azurewebsites.net" User-Agent="WindowsAzureXplatCLI/0.8.17" X-SITE-DEPLOYMENT-ID="NodeTwitterBot" X-MS-WAWS-JWT="" >
+  <step title="ZipStreamContent.OnZip" date="2015-04-13T09:20:46.327" 

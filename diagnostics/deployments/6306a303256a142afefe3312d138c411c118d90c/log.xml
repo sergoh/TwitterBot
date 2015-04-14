@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<entries>
+  <entry time="2015-04-06T22:01:19.5101437Z" id="42710979-8ff6-4df8-8a4e-c358462563dd" type="0">
+    <message>Updating branch '6306a303256a142afefe3312d138c411c118d90c'.</message>
+  </entry>
+  <entry time="2015-04-06T22:01:19.9320418Z" id="1804ee85-2d78-41c1-9390-163bd3f0650c" type="0">
+    <message>Updating submodules.</message>
+  </entry>
+  <entry time="2015-04-06T22:01:20.0101621Z" id="00888652-ff0d-4a16-bcda-ddb4b4dc4790" type="0">
+    <message>Preparing deployment for commit id '6306a30325'.</message>
+  </entry>
+  <entry time="2015-04-06T22:01:20.6195865Z" id="7b27ef9a-1d4f-4d27-a7c7-96d3326c470d" type="0">
+    <message>Generating deployment script.</message>
+    <entry time="2015-04-06T22:01:20.6820858Z" id="d2a0c3ae-f7d9-48ed-a450-401c7431b8ee" type="0">
+      <message>Using cached version of deployment script (command: 'azure -y --no-dot-deployment -r "D:\home\site\repository" -o "D:\home\site\deployments\tools" --node --sitePath "D:\home\site\repository"').</message>
+    </entry>
+  </entry>
+  <entry time="2015-04-06T22:01:20.7445455Z" id="37a2581a-7dc3-49bf-85d1-cd8fd7480113" type="0">
+    <message>Running deployment command...</message>
+    <entry time="2015-04-06T22:01:20.7601694Z" id="cf180554-b87a-4576-b571-096977221915" type="0">
+      <message>Command: "D:\home\site\deployments\tools\deploy.cmd"</message>
+    </entry>
+    <entry time="2015-04-06T22:01:21.2758039Z" id="0799ffa2-1aa1-4fd3-b1f6-839b85843a30" type="0">
+      <message>Handling node.js deployment.</message>
+    </entry>
+    <entry time="2015-04-06T22:01:21.4633103Z" id="66c6e048-59d6-496f-8bce-6018a90a5983" type="0">
+      <message>KuduSync.NET from: 'D:\home\site\repository' to: 'D:\home\site\wwwroot'</message>
+    </entry>
+    <entry time="2015-04-06T22:01:21.5883089Z" id="7c31034c-f004-4b1e-b3cd-820082bb139a" type="0">
+      <message>Using start-up script bin/www from package.json.</message>
+    </entry>
+    <entry time="2015-04-06T22:01:21.6195666Z" id="a24639d8-19a2-4ee7-8df3-4e5b1e89fc5b" type="0">
+      <message>Generated web.config.</message>
+    </entry>
+    <entry time="2015-04-06T22:01:21.6351866Z" id="315d0500-e1c7-4656-a3c6-31b94f7a87a9" type="0">
+      <message>The package.json file does not specify node.js engine version constraints.</message>
+    </entry>
+    <entry time="2015-04-06T22:01:21.6508105Z" id="3a7179ed-ae12-48a9-ba2e-e912c2adf798" type="0">
+      <message>The node.js application will run with the default node.js version 0.10.32.</message>
+    </entry>
+    <entry time="2015-04-06T22:01:24.3227379Z" id="871ec5aa-ac6b-4ad0-8970-094519419546" type="0">
+      <message>Finished successfully.</message>
+    </entry>
+  </entry>
+  <entry time="2015-04-06T22:01:24.4008683Z" id="8fc95220-5f88-4de2-a3ab-66070140dccb" type="0">
+    <message>Deployment successful.</message>
+  </entry>
+</entries>

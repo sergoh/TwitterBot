@@ -1,0 +1,4 @@
+[90mGET / [32m200 [90m2812ms - 1.1kb[0m
+[90mGET / [36m304 [90m62ms[0m
+[90mPOST /completetask [36m302 [90m140ms - 58b[0m
+[90mGET / [32m200 [90m79ms - 842b[0m

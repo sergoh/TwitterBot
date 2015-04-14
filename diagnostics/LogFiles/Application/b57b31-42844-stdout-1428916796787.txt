@@ -1,0 +1,2 @@
+[90mPOST /posttweet [36m302 [90m344ms - 58b[0m
+[90mGET / [32m200 [90m2578ms - 1.5kb[0m

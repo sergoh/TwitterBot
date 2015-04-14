@@ -1,0 +1,23 @@
+<step title="Executing external process" date="2015-04-13T08:44:51.342" instance="b57b31" type="process" path="kudu.exe" arguments="D:\home\site D:\Program Files (x86)\SiteExtensions\Kudu\44.40324.1452\msbuild" >
+  <step title="Executing external process" date="2015-04-13T08:44:51.373" type="process" path="git.exe" arguments="log -n 1 master --" /><!-- duration: 63ms -->
+  <step title="DeploymentManager.Deploy(id)" date="2015-04-13T08:44:51.452" >
+    <step title="Collecting changeset information" date="2015-04-13T08:44:51.561" /><!-- duration: 156ms -->
+    <step title="Updating to specific changeset" date="2015-04-13T08:44:51.717" >
+      <step title="Executing external process" date="2015-04-13T08:44:51.811" type="process" path="git.exe" arguments="checkout master --force" /><!-- duration: 953ms -->
+    </step><!-- duration: 1047ms -->
+    <step title="Updating submodules" date="2015-04-13T08:44:52.764" /><!-- duration: 63ms -->
+    <step title="Determining deployment builder" date="2015-04-13T08:44:52.952" >
+      <step title="Executing external process" date="2015-04-13T08:44:52.967" type="process" path="git.exe" arguments="ls-files *.csproj *.vbproj *.fsproj *.sln" /><!-- duration: 31ms -->
+      <step title="Builder is NodeSiteBuilder" date="2015-04-13T08:44:53.202" /><!-- duration: 16ms -->
+    </step><!-- duration: 266ms -->
+    <step title="Copying SSH keys" date="2015-04-13T08:44:53.264" /><!-- duration: 78ms -->
+    <step title="Building" date="2015-04-13T08:44:53.342" >
+      <step title="Generating deployment script" date="2015-04-13T08:44:53.405" >
+        <step title="Using cached version of the deployment script for command: -y --no-dot-deployment -r &quot;D:\home\site\repository&quot; -o &quot;D:\home\site\deployments\tools&quot; --node --sitePath &quot;D:\home\site\repository&quot;" date="2015-04-13T08:44:53.452" /><!-- duration: 16ms -->
+      </step><!-- duration: 62ms -->
+      <step title="Executing external process" date="2015-04-13T08:44:53.561" type="process" path="starter.cmd" arguments="&quot;D:\home\site\deployments\tools\deploy.cmd&quot;" /><!-- duration: 8782ms -->
+    </step><!-- duration: 9391ms -->
+  </step><!-- duration: 11282ms -->
+  <step title="Cleaning up temp files" date="2015-04-13T08:45:02.749" /><!-- duration: 0ms -->
+  <step title="WebHooksManager.PublishEventAsync: PostDeployment" date="2015-04-13T08:45:02.780" /><!-- duration: 250ms -->
+</step><!-- duration: 11813ms -->

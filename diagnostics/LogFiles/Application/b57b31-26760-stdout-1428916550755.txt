@@ -1,0 +1,6 @@
+[90mGET /delete [36m304 [90m2688ms[0m
+[90mPOST /deletetweet [36m302 [90m109ms - 70b[0m
+[90mGET /delete [32m200 [90m47ms - 1.08kb[0m
+[90mGET / [32m200 [90m157ms - 1.34kb[0m
+[90mPOST /addtweet [36m302 [90m46ms - 58b[0m
+[90mGET / [32m200 [90m31ms - 1.5kb[0m

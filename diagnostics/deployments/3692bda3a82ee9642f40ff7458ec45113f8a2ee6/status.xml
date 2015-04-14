@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<deployment>
+  <id>3692bda3a82ee9642f40ff7458ec45113f8a2ee6</id>
+  <author>Sergio Lopez</author>
+  <deployer>sergoh</deployer>
+  <authorEmail>sergoh@outlook.com</authorEmail>
+  <message>Twitter Integration</message>
+  <progress></progress>
+  <status>Success</status>
+  <statusText></statusText>
+  <lastSuccessEndTime>2015-04-13T08:45:02.4371446Z</lastSuccessEndTime>
+  <receivedTime>2015-04-13T08:44:51.6082986Z</receivedTime>
+  <startTime>2015-04-13T08:44:52.9051702Z</startTime>
+  <endTime>2015-04-13T08:45:02.4371446Z</endTime>
+  <complete>True</complete>
+  <is_temp>False</is_temp>
+  <is_readonly>False</is_readonly>
+</deployment>

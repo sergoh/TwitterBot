@@ -39,7 +39,7 @@ TweetList.prototype = {
       });  
       self.bot.tweet(status.toString(), function(error, reply ){
         if(error){
-          throw error;
+          callback(error);
         } else {
           self.tweet.updateTweet(postedTweet, function itemsUpdated(error) {
             if(error){
@@ -52,9 +52,13 @@ TweetList.prototype = {
       });
     }, function goHome(error){
       if(error) {
-        throw error;
+        res.status(error.status || 500);
+          res.render('error', {
+          message: error.message,
+          error: {}
+        });
       } else {
-       res.redirect('/');
+        res.redirect('/');
       }
     });
   }

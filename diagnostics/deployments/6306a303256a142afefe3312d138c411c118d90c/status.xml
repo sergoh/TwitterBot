@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<deployment>
+  <id>6306a303256a142afefe3312d138c411c118d90c</id>
+  <author>Sergio Lopez</author>
+  <deployer></deployer>
+  <authorEmail>sergoh@outlook.com</authorEmail>
+  <message>adding files</message>
+  <progress></progress>
+  <status>Success</status>
+  <statusText></statusText>
+  <lastSuccessEndTime>2015-04-06T22:01:24.432115Z</lastSuccessEndTime>
+  <receivedTime>2015-04-06T21:40:43.3159682Z</receivedTime>
+  <startTime>2015-04-06T22:01:20.2914106Z</startTime>
+  <endTime>2015-04-06T22:01:24.432115Z</endTime>
+  <complete>True</complete>
+  <is_temp>False</is_temp>
+  <is_readonly>False</is_readonly>
+</deployment>

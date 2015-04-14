@@ -1,0 +1,6 @@
+<step title="Incoming Request" date="2015-04-06T21:59:48.836" instance="68f2c4" url="/api/deployments/6306a303256a142afefe3312d138c411c118d90c/log?api-version=2014-06-01" method="GET" type="request" pid="6420,2,35" Connection="Keep-Alive" Content-Type="application/json" Accept="application/json" Accept-Language="en" Host="nodetwitterbot.scm.azurewebsites.net" x-ms-version="20140301" x-ms-correlation-request-id="a997ccfb-5ee0-4b15-b2a3-9d6908d09d42" x-ms-client-request-id="53FEA716-5E64-4546-A638-29EE246C18B9" x-ms-authorization="user" x-ms-client-principal-id="0003BFFDC09797AB" x-ms-client-app-id="c44b4083-3bb0-49c1-b47d-974e53cbdf3c" x-ms-from-geomaster="true" x-ms-request-id="8db90c70-2204-4eb6-9a0d-4f2c7e8cfc8b" X-SITE-DEPLOYMENT-ID="NodeTwitterBot" X-MS-WAWS-JWT="" >
+  <step title="DeploymentService.GetLogEntry" date="2015-04-06T21:59:48.836" >
+    <step title="DeploymentManager.GetLogEntries(id)" date="2015-04-06T21:59:48.852" /><!-- duration: 31ms -->
+  </step><!-- duration: 47ms -->
+  <step title="Outgoing response" date="2015-04-06T21:59:48.899" type="response" statusCode="200" statusText="OK" Server="Microsoft-IIS/8.0" x-ms-request-id="8db90c70-2204-4eb6-9a0d-4f2c7e8cfc8b" Cache-Control="private" X-AspNet-Version="4.0.30319" Content-Type="application/json; charset=utf-8" /><!-- duration: 0ms -->
+</step><!-- duration: 63ms -->

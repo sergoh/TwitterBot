@@ -1,0 +1,13 @@
+<step title="Incoming Request" date="2015-04-13T08:44:48.577" instance="b57b31" url="/NodeTwitterBot.git/git-receive-pack" method="POST" type="request" pid="1808,2,11" Connection="Keep-Alive" Content-Length="5451" Content-Type="application/x-git-receive-pack-request" Accept="application/x-git-receive-pack-result" Accept-Encoding="gzip" Host="nodetwitterbot.scm.azurewebsites.net" User-Agent="git/1.9.3 (Apple Git-50)" X-SITE-DEPLOYMENT-ID="NodeTwitterBot" X-MS-WAWS-JWT="" >
+  <step title="RpcService.ReceivePack" date="2015-04-13T08:44:48.592" >
+    <step title="Executing external process" date="2015-04-13T08:44:48.608" type="process" path="git.exe" arguments="rev-parse --git-dir" /><!-- duration: 31ms -->
+    <step title="Assuming git repository at D:\home\site\repository" date="2015-04-13T08:44:48.655" /><!-- duration: 0ms -->
+    <step title="Executing external process" date="2015-04-13T08:44:48.670" type="process" path="git.exe" arguments="rev-parse --git-dir" /><!-- duration: 47ms -->
+    <step title="Assuming git repository at D:\home\site\repository" date="2015-04-13T08:44:48.717" /><!-- duration: 0ms -->
+    <step title="Creating temporary deployment" date="2015-04-13T08:44:49.280" /><!-- duration: 62ms -->
+    <step title="GitExeServer.Receive" date="2015-04-13T08:44:49.342" >
+      <step title="Executing external process" date="2015-04-13T08:44:49.358" type="process" path="git.exe" arguments="receive-pack --stateless-rpc &quot;D:\home\site\repository&quot;" /><!-- duration: 13907ms -->
+    </step><!-- duration: 13923ms -->
+  </step><!-- duration: 14751ms -->
+  <step title="Outgoing response" date="2015-04-13T08:45:03.343" type="response" statusCode="200" statusText="OK" Server="Microsoft-IIS/8.0" Expires="Fri, 01 Jan 1980 00:00:00 GMT" Pragma="no-cache" Cache-Control="no-cache, max-age=0, must-revalidate" X-AspNet-Version="4.0.30319" Content-Type="application/x-git-receive-pack-result" /><!-- duration: 0ms -->
+</step><!-- duration: 14782ms -->

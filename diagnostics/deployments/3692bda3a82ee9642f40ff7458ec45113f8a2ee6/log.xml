@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<entries>
+  <entry time="2015-04-13T08:44:51.795821Z" id="291c2486-6638-4597-a4f9-23f5f9234bb0" type="0">
+    <message>Updating branch 'master'.</message>
+  </entry>
+  <entry time="2015-04-13T08:44:52.8114228Z" id="989c2908-71e3-4bc8-993b-f437faec09c3" type="0">
+    <message>Updating submodules.</message>
+  </entry>
+  <entry time="2015-04-13T08:44:52.8739207Z" id="7b262a27-625a-4524-a41c-f365494eaa02" type="0">
+    <message>Preparing deployment for commit id '3692bda3a8'.</message>
+  </entry>
+  <entry time="2015-04-13T08:44:53.3895836Z" id="0fd5d4c8-2169-498c-9e69-9c70ba99daec" type="0">
+    <message>Generating deployment script.</message>
+    <entry time="2015-04-13T08:44:53.4520354Z" id="f29441d9-8742-4d57-9851-df1218ac64d1" type="0">
+      <message>Using cached version of deployment script (command: 'azure -y --no-dot-deployment -r "D:\home\site\repository" -o "D:\home\site\deployments\tools" --node --sitePath "D:\home\site\repository"').</message>
+    </entry>
+  </entry>
+  <entry time="2015-04-13T08:44:53.5302031Z" id="5d371382-e1db-4b12-8acb-4b2fd74db438" type="0">
+    <message>Running deployment command...</message>
+    <entry time="2015-04-13T08:44:53.5457853Z" id="ca382a2a-a064-40b4-83fd-08f864ca1051" type="0">
+      <message>Command: "D:\home\site\deployments\tools\deploy.cmd"</message>
+    </entry>
+    <entry time="2015-04-13T08:44:54.0457876Z" id="27ae7195-e170-40bf-924a-2f0e1f62f3d3" type="0">
+      <message>Handling node.js deployment.</message>
+    </entry>
+    <entry time="2015-04-13T08:44:54.702028Z" id="395f5b14-a512-44e6-91c2-a16ccc77e28e" type="0">
+      <message>KuduSync.NET from: 'D:\home\site\repository' to: 'D:\home\site\wwwroot'</message>
+    </entry>
+    <entry time="2015-04-13T08:44:54.7176589Z" id="9a1aad9f-e163-4cce-90ad-661696e55500" type="0">
+      <message>Deleting file: 'config.json'</message>
+    </entry>
+    <entry time="2015-04-13T08:44:54.7332773Z" id="75c44007-def3-420b-a93d-c56dee5fa2ea" type="0">
+      <message>Copying file: '.gitignore'</message>
+    </entry>
+    <entry time="2015-04-13T08:44:54.7489119Z" id="e79b8741-c91c-41bd-8796-27e40c6bd02c" type="0">
+      <message>Copying file: 'app.js'</message>
+    </entry>
+    <entry time="2015-04-13T08:44:54.7645299Z" id="95dd0c16-0e38-4cf1-9081-4a1dec319058" type="0">
+      <message>Copying file: 'npm-debug.log'</message>
+    </entry>
+    <entry time="2015-04-13T08:44:54.7801549Z" id="7001914f-cdc5-4521-a757-bee75ebdd52b" type="0">
+      <message>Copying file: 'lib\bot.js'</message>
+    </entry>
+    <entry time="2015-04-13T08:44:54.7957796Z" id="b327a457-fed0-40c9-8fdf-fce2ea445db2" type="0">
+      <message>Deleting file: 'models\task.js'</message>
+    </entry>
+    <entry time="2015-04-13T08:44:54.8114045Z" id="310a02bf-22b0-4941-95b0-c41a36daeb6c" type="0">
+      <message>Copying file: 'models\tweet.js'</message>
+    </entry>
+    <entry time="2015-04-13T08:44:54.8270277Z" id="bf03f59c-4ca3-4426-a50b-a30a874c0dbf" type="0">
+      <message>Deleting file: 'routes\index.js'</message>
+    </entry>
+    <entry time="2015-04-13T08:44:54.8426536Z" id="b493a3da-765c-4066-929a-475827d78305" type="0">
+      <message>Deleting file: 'routes\tasklist.js'</message>
+    </entry>
+    <entry time="2015-04-13T08:44:54.8583176Z" id="b9398026-45ca-44ba-a762-d54badd9f10d" type="0">
+      <message>Deleting file: 'routes\users.js'</message>
+    </entry>
+    <entry time="2015-04-13T08:44:54.8739029Z" id="bf52e920-ed1c-4682-86bc-889b1997ced8" type="0">
+      <message>Copying file: 'routes\deletetweetlist.js'</message>
+    </entry>
+    <entry time="2015-04-13T08:44:54.8895289Z" id="c5a461d1-d0ae-4653-ad73-c8060a93b2e0" type="0">
+      <message>Copying file: 'routes\tweetlist.js'</message>
+    </entry>
+    <entry time="2015-04-13T08:44:54.905154Z" id="1c4476c7-cc2c-4d43-b511-1b8c015f249e" type="0">
+      <message>Copying file: 'views\delete.jade'</message>
+    </entry>
+    <entry time="2015-04-13T08:44:54.9207843Z" id="a3c1688e-303c-4ffe-9746-d4a5ae541f9f" type="0">
+      <message>Copying file: 'views\index.jade'</message>
+    </entry>
+    <entry time="2015-04-13T08:44:54.9364013Z" id="0059bef2-8839-400b-95d3-812aa46b937f" type="0">
+      <message>Copying file: 'views\layout.jade'</message>
+    </entry>
+    <entry time="2015-04-13T08:44:54.9520279Z" id="36a3737a-ac59-4497-b853-0a3bd41aa61b" type="0">
+      <message>Using start-up script bin/www from package.json.</message>
+    </entry>
+    <entry time="2015-04-13T08:44:54.9676537Z" id="1f26b7ac-03cc-4eb2-9046-1962800e8d46" type="0">
+      <message>Generated web.config.</message>
+    </entry>
+    <entry time="2015-04-13T08:44:54.9832781Z" id="5a3681ce-ccc1-4301-ac22-94d53ce56aac" type="0">
+      <message>The package.json file does not specify node.js engine version constraints.</message>
+    </entry>
+    <entry time="2015-04-13T08:44:54.9989014Z" id="004652fe-8d27-4412-aeb1-1cbacb2d46ec" type="0">
+      <message>The node.js application will run with the default node.js version 0.10.32.</message>
+    </entry>
+    <entry time="2015-04-13T08:45:02.3277627Z" id="abf23782-b95b-441b-9ecb-d0447264dc1e" type="0">
+      <message>Finished successfully.</message>
+    </entry>
+  </entry>
+  <entry time="2015-04-13T08:45:02.4058893Z" id="43d3be8a-9c09-45b2-a2bd-ca86836853dc" type="0">
+    <message>Deployment successful.</message>
+  </entry>
+</entries>

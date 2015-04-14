@@ -3,7 +3,8 @@ var nconf = require('nconf');
 nconf.env()
      .file({ file: 'config.json'});
 var tableName = nconf.get("TABLE_NAME");
-var partitionKey = nconf.get("PARTITION_KEY");
+var tweetPartitionKey = nconf.get("TWEET_PARTITION_KEY");
+var favoritePartitionKey = nconf.get("FAVORITE_PARTITION_KEY");
 var accountName = nconf.get("STORAGE_NAME");
 var accountKey = nconf.get("STORAGE_KEY");
 var consumerKey = nconf.get("CONSUMER_KEY");
@@ -34,6 +35,7 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 var Bot = require('./lib/bot');
 var bot = new Bot({
     consumer_key:         consumerKey
@@ -41,18 +43,36 @@ var bot = new Bot({
   , access_token:         accessToken
   , access_token_secret:  accessTokenSecret
 });
+
 var TweetList = require('./routes/tweetlist');
 var DeleteTweetList = require('./routes/deletetweetlist');
+var FavoriteSearch = require('./routes/favoritesearch');
+
 var Tweet = require('./models/tweet');
-var tweet = new Tweet(azure.createTableService(accountName, accountKey), tableName, partitionKey);
+var Favorite = require('./models/tweet');
+
+var tweet = new Tweet(azure.createTableService(accountName, accountKey), tableName, tweetPartitionKey);
+var favorite = new Tweet(azure.createTableService(accountName, accountKey), tableName, favoritePartitionKey);
+
 var tweetList = new TweetList(tweet, bot);
 var deletetweetList = new DeleteTweetList(tweet);
+var favoriteSearch = new FavoriteSearch(favorite, bot);
 
+// views
 app.get('/', tweetList.showTweets.bind(tweetList));
 app.get('/delete', deletetweetList.showTweets.bind(deletetweetList));
+app.get('/favorite', function(req,res) {
+    res.render('favorite',{title: 'Find Some Favs'});
+});
+
+
+// actions
 app.post('/deletetweet', deletetweetList.deleteTweet.bind(deletetweetList));
 app.post('/addtweet', tweetList.addTweet.bind(tweetList));
 app.post('/posttweet', tweetList.postTweet.bind(tweetList));
+app.post('/searchTweets', favoriteSearch.searchTweets.bind(favoriteSearch));
+app.post('/addFavorites', favoriteSearch.addFavorites.bind(favoriteSearch));
+
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {

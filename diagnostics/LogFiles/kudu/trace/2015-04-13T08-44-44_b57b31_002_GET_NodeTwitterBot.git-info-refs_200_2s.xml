@@ -1,0 +1,15 @@
+<step title="Incoming Request" date="2015-04-13T08:44:44.983" instance="b57b31" url="/NodeTwitterBot.git/info/refs?service=git-receive-pack" method="GET" type="request" pid="1808,2,6" Connection="Keep-Alive" Pragma="no-cache" Accept="*/*" Accept-Encoding="gzip" Host="nodetwitterbot.scm.azurewebsites.net" User-Agent="git/1.9.3 (Apple Git-50)" X-SITE-DEPLOYMENT-ID="NodeTwitterBot" X-MS-WAWS-JWT="" >
+  <step title="InfoRefsService.Execute" date="2015-04-13T08:44:45.889" >
+    <step title="Executing external process" date="2015-04-13T08:44:46.389" type="process" path="git.exe" arguments="rev-parse --git-dir" /><!-- duration: 328ms -->
+    <step title="Assuming git repository at D:\home\site\repository" date="2015-04-13T08:44:46.717" /><!-- duration: 16ms -->
+    <step title="InfoRefsService.SmartInfoRefs" date="2015-04-13T08:44:46.733" >
+      <step title="Executing external process" date="2015-04-13T08:44:46.748" type="process" path="git.exe" arguments="rev-parse --git-dir" /><!-- duration: 47ms -->
+      <step title="Assuming git repository at D:\home\site\repository" date="2015-04-13T08:44:46.795" /><!-- duration: 0ms -->
+      <step title="GitExeServer.AdvertiseReceivePack" date="2015-04-13T08:44:46.811" >
+        <step title="Executing external process" date="2015-04-13T08:44:46.811" type="process" path="git.exe" arguments="receive-pack --stateless-rpc --advertise-refs &quot;D:\home\site\repository&quot;" /><!-- duration: 266ms -->
+      </step><!-- duration: 266ms -->
+      <step title="Writing 185 bytes" date="2015-04-13T08:44:47.092" /><!-- duration: 0ms -->
+    </step><!-- duration: 359ms -->
+  </step><!-- duration: 1203ms -->
+  <step title="Outgoing response" date="2015-04-13T08:44:47.139" type="response" statusCode="200" statusText="OK" Server="Microsoft-IIS/8.0" x-ms-request-id="c10d3e38-f4e7-4c27-aceb-d4727aa3339f" Pragma="no-cache" Cache-Control="must-revalidate, no-cache, max-age=0" Expires="Tue, 01 Jan 1980 00:00:00 GMT" Content-Length="185" X-AspNet-Version="4.0.30319" Content-Type="application/x-git-receive-pack-advertisement" /><!-- duration: 0ms -->
+</step><!-- duration: 2172ms -->
